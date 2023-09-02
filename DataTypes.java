@@ -1,4 +1,4 @@
-public class PrimitiveDT{
+public class DataTypes{
     public static void main(String args[]){
         // java is typed language where we need to declear type of variable
 
