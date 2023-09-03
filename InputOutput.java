@@ -8,6 +8,7 @@ public class InputOutput{
         String name = sc.nextLine();
         System.out.println(name);
 
+        sc.nextLine(); // get rid of empty newline char
         String a = sc.next();
         System.out.println(a);
 
@@ -31,6 +32,5 @@ public class InputOutput{
 
         boolean var = sc.nextBoolean();
         System.out.println(var);
-
     }
 }
