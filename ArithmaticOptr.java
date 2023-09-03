@@ -1,7 +1,8 @@
-public class Operators{
+public class ArithmaticOptr{
     public static void main(String args[]){
-        //Arithmatic(       binary = + - * / %      unary = ++ --       )
+        //binary = + - * / %
 
+        //unary = ++ --
         int a=2;        //pre increment
         int b=++a;      //first a is incremented a=3 then assigned to b=a=3
         System.out.println(a);
