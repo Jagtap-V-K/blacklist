@@ -1,40 +1,80 @@
 /*
-    functions and method are no different things in java
+    functions and method (class) are no different things in java
     as whole code of java is always written in classes only (not like C)
+
+    Syntax:
+        returnType main (type param1, type param2) {
+            //function call
+        }
+        returnType name (type param1, type param2) {
+            //function definition
+            //return 0;     return 1;       all are okay
+        }
+
+    user defined:- add, substract, factorial
+    in built:- Math(max, min, sqrt), sc.nextInt();
+
 */
 
-public class BasicFunction{     //java class name BasicFunction
 
-    /*
-        main function with void as a return type taking string arguments as input;
-        public static is the access modifire
-    */    
+import java.util.*;
+public class BasicFunction{
     public static void main(String args[]){
-        op();
-        ops();
+        
+        //type 1: without argument without return type
+        op1();
+        
+        //type 2: with argument without return type
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        op2(a,b);
+
+        //type 3: without argument with return type
+        int c = op3();
+        System.out.println(c);
+
+        //type 4: with argument with return type
+        Scanner s = new Scanner(System.in);
+        int d = s.nextInt();
+        int e = s.nextInt();
+        int f = op4(d,e);           // actual parameters
+        System.out.println(f);
+
+        //recurssive
     }
 
     
-    public static void op(){
+    // type1
+    public static void op1(){
         System.out.println("I feeling too dizzy right now");
-        //return (may or may not written)
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println(c);
     }
 
+    // type2
+    public static void op2(int x, int y){
+        int c = x + y;
+        System.out.println(c);
+    }
     
-    public static int ops(){
-        System.out.println("I feeling too dizzy right now");
-        System.out.println("I feeling too dizzy right now");
-        System.out.println("I feeling too dizzy right now");
-        return 3;       //for int return type always need return type
-        //return 0;     return 1;       all are okay
+    // type3
+    public static int op3(){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a + b;
+        
+        return c;        
     }
 
-    //------------------------------TYPE 1: Without Argument Without Return Type-------------------------------------//
-    /*  Syntax:
-        returnType name () {
-            //body
-            return statment;
-        }
-    */
+    // type4
+    public static int op4(int x, int y){        // formal parameters
+        int c = x + y;
+        return c;
+    }
 
 }
