@@ -1,11 +1,13 @@
-// list of elements of same datatype placed in contigious location
-//dataType arrayName[] = new dataType[size];
-//array is an static element means no size can be changed while runtime
+//  list of elements of same datatype placed in contigious location
+
+//  dataType arrayName[] = new dataType[size];
+
+//  array is an static element means no size can be changed while runtime
 
 import java.util.*;
 public class Ary{
     public static void main(String args[]){
-        /*
+        
         //Creatinga array
         String fruit[] = {"mango", "apple", "banana", "cherry"};
         int mark[] = new int[50];
@@ -45,6 +47,6 @@ public class Ary{
 
         //length of array
         System.out.println("length of array num is " + num.length);
-        */
+        
     }
 }
