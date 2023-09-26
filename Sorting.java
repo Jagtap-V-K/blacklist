@@ -24,7 +24,7 @@ public class Sorting{
 
     //selection - pick smallest of put it in 1st
     //position
-    for(int i=0; i<a.length-1; i++){
+    /*for(int i=0; i<a.length-1; i++){
         int minPos =i;
         for(int j=i+1; j<a.length; j++){
             if(a[minPos]>a[j]){     // < gives reverse sorted
@@ -37,8 +37,23 @@ public class Sorting{
     }
     for(int i=0; i<a.length; i++){
         System.out.print(a[i]+" ");
+    }*/
+
+
+    //Incertion- Pick an element from unsorted part
+    //& place in the right position in sorted part
+    for(int i=1; i<a.length; i++){
+        int CurrNo = a[i];
+        int PrevNo = i-1;
+        while(PrevNo >= 0 && a[PrevNo] > CurrNo){
+            a[PrevNo + 1] = a[PrevNo];
+            PrevNo--;
+        }
+        a[PrevNo + 1] = CurrNo;
     }
-    
+    for(int i=0; i<a.length; i++){
+        System.out.print(a[i]+" ");
+    }
 
 
 
