@@ -34,7 +34,7 @@ public class D2Ary{
         int startCol = 0;
         int endCol = a[0].length - 1;
 
-        while(startRow <= endRow && startCol <=e ndCol){
+        while(startRow <= endRow && startCol <=endCol){
             
             for(int j =startCol; j<=endCol; j++ ){
                 system.out.print(a[startRow][j] +" ");
